@@ -153,15 +153,53 @@
     </div>
   </footer>
 
-  <script>
-    const navToggle = document.querySelector('.nav-toggle');
-    const nav = document.querySelector('.site-nav');
+ <script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.site-nav');
 
-    if (navToggle && nav) {
-      navToggle.addEventListener('click', () => {
-        nav.classList.toggle('nav-open');
-      });
-    }
-  </script>
-</body>
-</html>
+  if (navToggle && nav) {
+    navToggle.addEventListener('click', () => {
+      nav.classList.toggle('nav-open');
+    });
+  }
+
+  // CONTACT FORM HANDLING
+  const form = document.getElementById('contact-form');
+
+  if (form) {
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const name = document.getElementById('name').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const location = document.getElementById('location').value.trim();
+      const details = document.getElementById('details').value.trim();
+
+      const subject = `New Security Inquiry from ${name || 'Website Visitor'}`;
+
+      const bodyLines = [
+        `Name: ${name}`,
+        `Phone: ${phone}`,
+        email ? `Email: ${email}` : '',
+        location ? `Location: ${location}` : '',
+        '',
+        'Details:',
+        details || '(No additional details provided)'
+      ].filter(Boolean);
+
+      const body = bodyLines.join('\n');
+
+      // Your new email address here 👇
+      const mailto = `mailto:onewaysservices@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+      // Open the user's email app with everything filled in
+      window.location.href = mailto;
+
+      // Then redirect them to the thank-you page
+      setTimeout(() => {
+        window.location.href = 'thankyou.html';
+      }, 700);
+    });
+  }
+</script>
