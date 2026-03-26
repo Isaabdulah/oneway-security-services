@@ -3,9 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About | Oneway Security Services</title>
 
-  <meta name="description" content="Learn about Oneway Security Services, founded by Isa and supported by his sister Lejla, coming from a security-focused family and committed to professional protection across Ontario." />
+  <title>About Oneway Security Services | Toronto & GTA Security Company</title>
+  <meta
+    name="description"
+    content="Learn about Oneway Security Services, a family-built security company providing professional guard services, condo security, mobile patrol, and event coverage across Toronto and the GTA."
+  />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.onewaysecurityservices.com/about.html" />
+
+  <meta property="og:title" content="About Oneway Security Services | Toronto & GTA Security Company" />
+  <meta
+    property="og:description"
+    content="Get to know Oneway Security Services, a local security company focused on professional, reliable, and respectful security coverage across Toronto and the GTA."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.onewaysecurityservices.com/about.html" />
+  <meta property="og:site_name" content="Oneway Security Services" />
 
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -15,7 +29,7 @@
     <div class="container header-inner">
       <div class="logo">Oneway<span>Security</span></div>
 
-      <button class="nav-toggle" aria-label="Toggle navigation">
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
         ☰
       </button>
 
@@ -36,7 +50,8 @@
       <div class="hero-text">
         <h1>About Oneway Security Services</h1>
         <p>
-          A locally based security company built by a family that grew up around the security industry, focused on doing the job properly, professionally, and with respect.
+          A locally focused security company built on professionalism, reliability, and respect,
+          serving clients across Toronto and the Greater Toronto Area.
         </p>
       </div>
     </div>
@@ -49,28 +64,33 @@
         <article class="card">
           <h2>Our Story</h2>
           <p>
-            Oneway Security Services was founded by <strong>Isa</strong>, and his sister <strong>Lejla</strong>.
-            Growing up in a security-focused family, we saw first-hand what good security looks like – clear communication, strong presence, and respect for people and property.
+            Oneway Security Services was founded by <strong>Isa</strong>, with support from his sister
+            <strong>Lejla</strong>. Coming from a family with a strong connection to the security industry,
+            we grew up seeing what effective security should look like: strong presence, clear communication,
+            professionalism, and respect for people and property.
           </p>
           <p>
-            Instead of taking a one-size-fits-all approach, we focus on understanding each site or event properly.
-            Our goal is simple: provide professional security that our clients can rely on, without overcomplicating things.
+            That background shaped the way we approach this business today. Instead of treating every site
+            the same, we focus on understanding each property, event, or building properly so we can provide
+            security coverage that is dependable, practical, and well-managed.
           </p>
         </article>
 
         <article class="card">
           <h2>What We Stand For</h2>
           <p>
-            We believe security should make people feel safer, not uncomfortable. That means guards who are:
+            We believe security should help people feel safer and more confident in their environment.
+            That means guards who are:
           </p>
           <ul style="margin-left: 1.1rem; font-size: 0.9rem;">
             <li>Presentable and professional on every shift</li>
-            <li>Clear and calm when dealing with incidents</li>
-            <li>Respectful with tenants, customers, and staff</li>
-            <li>Serious about reporting and accountability</li>
+            <li>Calm and clear when responding to incidents</li>
+            <li>Respectful with residents, customers, guests, and staff</li>
+            <li>Consistent with reporting, accountability, and communication</li>
           </ul>
           <p style="margin-top: 0.6rem;">
-            Whether it’s a plaza, construction site, or private event, we treat your property as if it were our own.
+            Whether we are covering a condo, construction site, commercial property, or private event,
+            we aim to provide security that reflects professionalism and earns trust.
           </p>
         </article>
       </div>
@@ -83,23 +103,26 @@
       <h2 class="section-title">Our Values</h2>
       <div class="grid grid-3">
         <article class="card card-dark">
-          <h3>Family Roots in Security</h3>
+          <h3>Built on Real Security Values</h3>
           <p>
-            Growing up around security work taught us the importance of doing things properly and not cutting corners when it comes to safety.
+            Growing up around security work taught us that safety depends on consistency, awareness,
+            and doing the job properly without cutting corners.
           </p>
         </article>
 
         <article class="card card-dark">
           <h3>Professionalism on Every Shift</h3>
           <p>
-            From uniforms and posture to communication and reports, we expect a professional standard from ourselves and anyone who represents us.
+            From appearance and posture to communication and reporting, we believe every guard should
+            represent a professional standard clients can rely on.
           </p>
         </article>
 
         <article class="card card-dark">
-          <h3>Local & Accessible</h3>
+          <h3>Responsive & Local</h3>
           <p>
-            We are based in Ontario and stay accessible to our clients. If something changes or you need extra coverage, you’re dealing directly with us.
+            We focus on Toronto and the GTA so we can stay responsive, accessible, and better aligned
+            with the real needs of local properties, sites, and events.
           </p>
         </article>
       </div>
@@ -112,7 +135,8 @@
       <div>
         <h2>Let’s Talk About Your Security Needs</h2>
         <p>
-          Whether you’re just exploring options or need coverage quickly, we’re happy to walk through what makes sense for your site.
+          Whether you are planning ahead or need coverage quickly, we are here to help you understand
+          what type of security service makes the most sense for your site or event.
         </p>
       </div>
       <div class="contact-banner-actions">
@@ -125,8 +149,8 @@
   <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>© 2025 Oneway Security Services. All rights reserved.</p>
-      <p>Serving Ontario, Canada.</p>
+      <p>© 2026 Oneway Security Services. All rights reserved.</p>
+      <p>Serving Toronto, Mississauga, Brampton, Vaughan, Markham, Richmond Hill, and the GTA.</p>
     </div>
   </footer>
 
@@ -137,6 +161,7 @@
     if (navToggle && nav) {
       navToggle.addEventListener('click', () => {
         nav.classList.toggle('nav-open');
+        navToggle.setAttribute('aria-expanded', nav.classList.contains('nav-open') ? 'true' : 'false');
       });
     }
   </script>
